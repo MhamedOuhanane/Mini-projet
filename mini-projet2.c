@@ -24,7 +24,6 @@ int cmp(char A[] ,char B[]);
 int len(char A[]);
 void clearBuffer();
 
-Contact Personne[n1];
 int j ;
 
 int main()
@@ -122,10 +121,7 @@ void Supprimer_Contact(Contact A[])
         j--;
         for (int i = a ; i <= j; i++)
         {
-            cpy(A[i].nom , A[i+1].nom);
-            cpy(A[i].numero , A[i+1].numero);
-            cpy(A[i].adress , A[i+1].adress);
-            cpy(A[i].ID , A[i+1].ID);
+            A[i] = A[i+1];
         }
     }
 }
