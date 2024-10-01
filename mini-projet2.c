@@ -238,7 +238,7 @@ int len(char A[])
     for ( i = 0; i < n2; i++)
     {
         {
-            if (A[i] == 0)
+            if (A[i] == '\0')
             {
                 break;
             }
