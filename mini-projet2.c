@@ -97,23 +97,15 @@ void Modifier_Contact(Contact A[])
     a = recherche(A , b);
     if(a != -1)
     {
-        printf("Saisir le nom du nouvelle Contact : ");
-        scanf("%s",B.nom);
-        clearBuffer();
-        printf("Saisir le numero de telephone du nouvelle Contact : ");
+        printf("Saisir le nouvelle numero du Contact : ");
         scanf("%s",B.numero);
         clearBuffer();
-        printf("Saisir l'adress du nouvelle Contact : ");
+        printf("Saisir le nouvelle adress du Contact : ");
         scanf("%s",B.adress);
         clearBuffer();
-        printf("Saisir l'ID du nouvelle Contact : ");
-        scanf("%s",B.ID);
-        clearBuffer();
-
-        cpy(A[a].nom, B.nom);
+        
         cpy(A[a].numero, B.numero);
         cpy(A[a].adress, B.adress);
-        cpy(A[a].ID , B.ID);
     }
 }
 
